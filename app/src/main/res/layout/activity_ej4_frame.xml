@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  El FrameLayout pone a todos sus hijos uno encima de otro, así que para repartirlos uso layout_gravity:
+    - Filas: top, center_vertical y bottom.
+    - Columnas: los nueve van en center_horizontal y a los de los lados les pongo un margen de 95dp
+      (lo que mide un cuadrado más el hueco). Al principio puse el doble y se salían de la pantalla,
+      porque al centrar el FrameLayout desplaza el cuadrado con el margen entero.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="40dp"
+    tools:context=".Ej4FrameActivity">
+
+    <!-- FILA 1 (arriba) -->
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginEnd="95dp"
+        android:background="@color/ej4_1" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@color/ej4_2" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginStart="95dp"
+        android:background="@color/ej4_3" />
+
+    <!-- FILA 2 (centro) -->
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginEnd="95dp"
+        android:background="@color/ej4_4" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:background="@color/ej4_5" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="95dp"
+        android:background="@color/ej4_6" />
+
+    <!-- FILA 3 (abajo) -->
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginEnd="95dp"
+        android:background="@color/ej4_7" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/ej4_8" />
+
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="95dp"
+        android:background="@color/ej4_9" />
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pantalla principal del ejercicio 3 con el primer diseño (azul | blanco | azul). Arriba la cabecera y debajo el cuerpo -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ej3MenuActivity">
+
+    <TextView
+        style="@style/Cabecera"
+        android:text="PROGRAMACIÓN MULTIMEDIA" />
+
+    <!-- El cuerpo es un LinearLayout horizontal con 3 columnas; con weight = 1 en las tres miden lo mismo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ej3_azul" />
+
+        <!-- En la columna blanca del centro pongo los 3 botones, uno debajo de otro -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ej3_blanco"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnPantalla1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verde" />
+
+            <Button
+                android:id="@+id/btnPantalla2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Tablero" />
+
+            <Button
+                android:id="@+id/btnPantalla3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Bandera" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/ej3_azul" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UT3Ejercicios">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activities de los ejercicios, todas se abren desde el menú de MainActivity -->
+        <activity android:name=".Ej1UrlActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Ej2RetrasoActivity" />
+        <activity android:name=".Ej2DestinoActivity" />
+        <activity android:name=".Ej3MenuActivity" />
+        <activity android:name=".Ej3Pantalla1Activity" />
+        <activity android:name=".Ej3Pantalla2Activity" />
+        <activity android:name=".Ej3Pantalla3Activity" />
+        <activity android:name=".Ej4FrameActivity" />
+        <activity android:name=".Ej5CalculadoraActivity" />
+        <activity android:name=".Ej6PerfilActivity" />
+    </application>
+
+    <!-- Desde Android 11 hace falta declarar esto para que el Intent del ejercicio 1 pueda encontrar el navegador -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+</manifest>

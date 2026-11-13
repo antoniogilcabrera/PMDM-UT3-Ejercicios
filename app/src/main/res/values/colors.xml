@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores de la cabecera de cada pantalla -->
+    <color name="cabecera">#FF1B2540</color>
+    <color name="cabecera_texto">#FFFFFFFF</color>
+
+    <!-- Ejercicio 3: colores de las pantallas. Los tengo todos aquí para cambiarlos sin tocar los layouts -->
+    <color name="ej3_azul">#FF1E3FD8</color>
+    <color name="ej3_verde">#FF22C55E</color>
+    <color name="ej3_rojo">#FFE53935</color>
+    <color name="ej3_blanco">#FFFFFFFF</color>
+
+    <!-- Ejercicio 4: los nueve cuadrados -->
+    <color name="ej4_1">#FF2A9D8F</color>
+    <color name="ej4_2">#FF4CAF50</color>
+    <color name="ej4_3">#FF8BC34A</color>
+    <color name="ej4_4">#FF673AB7</color>
+    <color name="ej4_5">#FF3F51B5</color>
+    <color name="ej4_6">#FF2196F3</color>
+    <color name="ej4_7">#FFE91E63</color>
+    <color name="ej4_8">#FFF44336</color>
+    <color name="ej4_9">#FFEDA28A</color>
+
+    <!-- Ejercicio 5: calculadora -->
+    <color name="calc_fondo">#FF202124</color>
+    <color name="calc_numero">#FF3C4043</color>
+    <color name="calc_operacion">#FFF29900</color>
+    <color name="calc_borrar">#FFD93025</color>
+
+    <!-- Ejercicio 6: perfil -->
+    <color name="perfil_banner">#FF3D4FA8</color>
+    <color name="perfil_avatar">#FFFFD84D</color>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menú principal. Meto los botones en un ScrollView por si en algún móvil pequeño no caben todos -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UT3 · Activities, Intents y Layouts"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:text="Antonio Gil Cabrera · 2º DAM" />
+
+        <Button
+            android:id="@+id/btnEj1"
+            style="@style/BotonMenu"
+            android:text="1 · Abrir una URL" />
+
+        <Button
+            android:id="@+id/btnEj2"
+            style="@style/BotonMenu"
+            android:text="2 · Navegación retrasada (10 s)" />
+
+        <Button
+            android:id="@+id/btnEj3"
+            style="@style/BotonMenu"
+            android:text="3 · LinearLayout anidados" />
+
+        <Button
+            android:id="@+id/btnEj4"
+            style="@style/BotonMenu"
+            android:text="4 · FrameLayout con nueve FrameLayout" />
+
+        <Button
+            android:id="@+id/btnEj5"
+            style="@style/BotonMenu"
+            android:text="5 · Calculadora con TableLayout" />
+
+        <Button
+            android:id="@+id/btnEj6"
+            style="@style/BotonMenu"
+            android:text="6 · Perfil con ConstraintLayout" />
+    </LinearLayout>
+</ScrollView>
